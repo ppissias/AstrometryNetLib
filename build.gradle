@@ -11,6 +11,11 @@ plugins {
     id 'java'	
 }
 
+task sourceJar(type: Jar) {
+    classifier 'sources'
+    from sourceSets.main.allJava
+}
+
 repositories {
     jcenter()
 }
