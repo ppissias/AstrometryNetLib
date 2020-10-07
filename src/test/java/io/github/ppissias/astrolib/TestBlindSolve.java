@@ -54,5 +54,7 @@ public class TestBlindSolve {
 		Future<PlateSolveResult> solveResult = astrometryLib.blindSolve(file);
 		System.out.println("Solve result: "+solveResult.get().toString());
 		assertTrue("Solve result should be true",solveResult.get().isSuccess());
+		
+
 	}
 }
