@@ -21,6 +21,7 @@ This is a java library for plate solving astronomical images using the http://no
 		//...
 ```
 ## Compiling
+You need to have Java 11 installed
 ```
 gradlew build -x test
 ```
