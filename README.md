@@ -20,6 +20,22 @@ Future<PlateSolveResult> solveResult = astrometryLib.customSolve(astronomicalFil
 //if the file is a FITS file the OBJCTRA and OBJCTDEC information from the header will be used if not provided in the customSolveParameters object
 //...
 ```
+Below you can see how the data is structured and returned through the ```PlateSolveResult.getSolveInformation()``` call
+```java
+Map<String, String> solveInformation = new HashMap<String, String>();
+solveInformation.put("source", "astrometry.net");
+solveInformation.put("original_response", gson.toJson(jobResResponse));
+solveInformation.put("annotated_image_link", annotategImageLink+jobID);
+solveInformation.put("status_page_link", resultsPageLink+submitFileResponse.getSubid());
+//all properties
+
+solveInformation.put("dec",""+jobResResponse.getCalibration().getDec());
+solveInformation.put("ra",""+jobResResponse.getCalibration().getRa());
+solveInformation.put("orientation",""+jobResResponse.getCalibration().getOrientation());
+solveInformation.put("pixscale",""+jobResResponse.getCalibration().getPixscale());
+solveInformation.put("radius",""+jobResResponse.getCalibration().getRadius());
+solveInformation.put("parity",""+jobResResponse.getCalibration().getParity());
+```
 ## Compiling
 You need to have Java 11 installed
 ```
