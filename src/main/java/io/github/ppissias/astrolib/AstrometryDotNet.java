@@ -48,6 +48,7 @@ public class AstrometryDotNet {
 	private static final String submitFileURI = "http://nova.astrometry.net/api/upload";
 	private static final String submissionProgressURI = "http://nova.astrometry.net/api/submissions/";//+SUBID
 	private static final String jobProgressURI = "http://nova.astrometry.net/api/jobs/"; //+JOBID/info
+	private static final String wcsBaseURI = "http://nova.astrometry.net/wcs_file/"; //+JOBID
 	//links with info
 	private static final String annotategImageLink = "http://nova.astrometry.net/annotated_display/"; //+JOBID
 	private static final String resultsPageLink = "http://nova.astrometry.net/status/"; //+StatusID
@@ -371,6 +372,7 @@ public class AstrometryDotNet {
 					solveInformation.put("original_response", gson.toJson(jobResResponse));
 					solveInformation.put("annotated_image_link", annotategImageLink+jobID);
 					solveInformation.put("status_page_link", resultsPageLink+submitFileResponse.getSubid());
+					solveInformation.put("wcs_link", wcsBaseURI+jobID);
 					//all properties
 					
 					solveInformation.put("dec",""+jobResResponse.getCalibration().getDec());
