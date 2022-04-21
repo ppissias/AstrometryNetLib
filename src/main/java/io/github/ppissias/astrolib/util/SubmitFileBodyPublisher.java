@@ -5,16 +5,12 @@ package io.github.ppissias.astrolib.util;
 
 import java.io.File;
 import java.io.IOException;
-import java.math.BigInteger;
 import java.net.http.HttpRequest.BodyPublisher;
 import java.net.http.HttpRequest.BodyPublishers;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
-
-import io.github.ppissias.astrolib.SubmitFileRequest;
 
 /**
  * Returns a BodyPublisher for the Submit File Request to 

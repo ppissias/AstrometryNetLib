@@ -17,7 +17,7 @@ task sourceJar(type: Jar) {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 tasks.withType(JavaCompile) {
