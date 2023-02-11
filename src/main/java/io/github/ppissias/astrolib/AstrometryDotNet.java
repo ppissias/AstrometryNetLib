@@ -50,7 +50,7 @@ public class AstrometryDotNet {
 	private static final String jobProgressURI = "http://nova.astrometry.net/api/jobs/"; //+JOBID/info
 	private static final String wcsBaseURI = "http://nova.astrometry.net/wcs_file/"; //+JOBID
 	//links with info
-	private static final String annotategImageLink = "http://nova.astrometry.net/annotated_display/"; //+JOBID
+	private static final String annotategImageLink = "https://nova.astrometry.net/annotated_display/"; //+JOBID
 	private static final String resultsPageLink = "http://nova.astrometry.net/status/"; //+StatusID
 	
 	//Astrometry.net session ID, after logging
