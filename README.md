@@ -36,6 +36,10 @@ solveInformation.put("pixscale",""+jobResResponse.getCalibration().getPixscale()
 solveInformation.put("radius",""+jobResResponse.getCalibration().getRadius());
 solveInformation.put("parity",""+jobResResponse.getCalibration().getParity());
 ```
+## Download
+
+[Download latest release](https://github.com/ppissias/AstrometryNetLib/releases/download/v0.2/AstrometryNetLib.jar)
+
 ## Compiling
 You need to have Java 11 installed
 ```
