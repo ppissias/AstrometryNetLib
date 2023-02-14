@@ -1,5 +1,11 @@
-/**
+/*
+ * SpacePixels
  * 
+ * Copyright (c)2020-2023, Petros Pissias.
+ * See the LICENSE file included in this distribution.
+ *
+ * author: Petros Pissias <petrospis at gmail.com>
+ *
  */
 package io.github.ppissias.astrolib.util;
 
@@ -22,8 +28,6 @@ import io.github.ppissias.astrolib.SubmitFileRequest;
  * 
  * Thanks to https://github.com/ralscha/blog2019/blob/master/java11httpclient/client/src/main/java/ch/rasc/httpclient/File.java
  * for the example code
- * 
- * @author Petros Pissias
  *
  */
 public class SubmitFileBodyPublisher {

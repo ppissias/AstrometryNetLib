@@ -6,20 +6,22 @@ package io.github.ppissias.astrolib;
 import javax.annotation.processing.Generated;
 
 
-/**
- * Documentation obtained from 
- * http://astrometry.net/doc/net/api.html
+/*
+ * SpacePixels
  * 
- * @author Petros Pissias
+ * Copyright (c)2020-2023, Petros Pissias.
+ * See the LICENSE file included in this distribution.
+ *
+ * author: Petros Pissias <petrospis at gmail.com>
  *
  */
 public class SubmitFileRequest {
 
 	private String session; //string, requried. Your session key, required in all requests
 	
-	private String publicly_visible; //string: “y”, “n”
+	private String publicly_visible; //string: y, n
 	
-	private String scale_units; //string: “degwidth” (default), “arcminwidth”, “arcsecperpix”. The units for the “scale_lower” and “scale_upper” arguments; becomes the “–scale-units” argument to “solve-field” on the server side.
+	private String scale_units; //string: degwidth (default), arcminwidth, arcsecperpix. The units for the scale_lower and scale_upper arguments; becomes the –scale-units argument to solve-field on the server side.
 	
 	private float scale_lower; //float. The lower-bound of the scale of the image.
 	

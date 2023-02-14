@@ -1,5 +1,11 @@
-/**
+/*
+ * SpacePixels
  * 
+ * Copyright (c)2020-2023, Petros Pissias.
+ * See the LICENSE file included in this distribution.
+ *
+ * author: Petros Pissias <petrospis at gmail.com>
+ *
  */
 package io.github.ppissias.astrolib;
 
@@ -14,7 +20,7 @@ import java.util.Arrays;
  * {"user": 1000, "processing_started": "2020-10-05 09:59:34.799331", "processing_finished": "2020-10-05 09:59:35.033692", 
  * "user_images": [4046174], "images": [9302760], "jobs": [4612037], "job_calibrations": [[4612037, 3129343]]}
  * 
- * When you submit a URL or file, you will get back a subid submission identifier. You can use this to query the status of your submission as it gets queued and run. Each submission can have 0 or more “jobs” associated with it; a job corresponds to a run of the solve-field program on your data.
+ * When you submit a URL or file, you will get back a subid submission identifier. You can use this to query the status of your submission as it gets queued and run. Each submission can have 0 or more jobs associated with it; a job corresponds to a run of the solve-field program on your data.
  * 
  * If the job has not started yet, the jobs array may be empty. If the job_calibrations array is not empty, then we solved your image.
  * 

@@ -1,5 +1,11 @@
-/**
+/*
+ * SpacePixels
  * 
+ * Copyright (c)2020-2023, Petros Pissias.
+ * See the LICENSE file included in this distribution.
+ *
+ * author: Petros Pissias <petrospis at gmail.com>
+ *
  */
 package io.github.ppissias.astrolib;
 
@@ -14,10 +20,7 @@ import java.util.logging.Logger;
 
 import org.junit.Test;
 
-/**
- * @author Petros Pissias
- *
- */
+
 public class TestLogin {
 
 	@Test public void testLogin() throws IOException, InterruptedException {	

@@ -1,13 +1,17 @@
-/**
+/*
+ * SpacePixels
  * 
+ * Copyright (c)2020-2023, Petros Pissias.
+ * See the LICENSE file included in this distribution.
+ *
+ * author: Petros Pissias <petrospis at gmail.com>
+ *
  */
 package io.github.ppissias.astrolib;
 
 /**
  * Documentation obtained from 
  * http://astrometry.net/doc/net/api.html
- * 
- * @author Petros Pissias
  *
  */
 public class SubmitFileResponse {

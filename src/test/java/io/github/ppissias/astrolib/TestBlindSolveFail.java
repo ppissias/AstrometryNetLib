@@ -1,5 +1,11 @@
-/**
+/*
+ * SpacePixels
  * 
+ * Copyright (c)2020-2023, Petros Pissias.
+ * See the LICENSE file included in this distribution.
+ *
+ * author: Petros Pissias <petrospis at gmail.com>
+ *
  */
 package io.github.ppissias.astrolib;
 
@@ -21,7 +27,6 @@ import nom.tam.fits.FitsException;
 /**
  * Please consider when running this test that it will consume CPU time at astrometry.net
  * Only run it if you want to specifically test some settings.
- * @author Petros Pissias
  *
  */
 public class TestBlindSolveFail {
